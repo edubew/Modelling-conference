@@ -4,10 +4,16 @@
   box-sizing: border-box;
 }
 
-.header-image {
-  background-image: url("images/background-image.jpg");
+body {
+  background-color: #d3d3d3;
+}
+
+header {
+  background-image: url("images/banner-image.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  height: 40vh;
+  width: 100vw;
 }
 
 .bars {
@@ -21,4 +27,10 @@
 .hambuger-menu {
   margin-top: 20px;
   margin-left: 15px;
+}
+
+.introductory-section {
+  background-image: url("images/content-image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
