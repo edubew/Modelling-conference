@@ -11,8 +11,8 @@ body {
 
 header {
   background-image: url("images/banner-image.jpg");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat;
   height: 40vh;
   opacity: 0.1;
   width: 100vw;
@@ -57,3 +57,60 @@ header {
 .introductory-section h3 {
   margin-bottom: 24px;
 }
+
+.events-section {
+  background-color: #272a31;
+  background-image: url("images/section.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-program {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-program h2 {
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: underline solid orangered;
+  text-decoration-thickness: 3px;
+  margin: 30px 24px;
+}
+
+#events {
+    display: grid;
+    grid-template-columns: 1fr 4fr 5fr;
+    background-color: rgba(71, 71, 77, 0.61);
+    margin: 10px;
+    padding: 4px;
+    align-items: center;
+}
+
+#events h3 {
+  color: rgb(230, 24, 24);
+}
+
+#events p {
+  color: rgba(255, 255, 255, 0.836);
+}
+
+button {
+  background-color: rgb(230, 24, 24);
+  color: white;
+  font-size: 20px;
+  padding: 8px;
+  height: 70px;
+  width: 70%;
+  margin: 5% 15%;
+  /* font-style: italic; */
+  border: none;
+}
+
+
+
+
+
+        
+
