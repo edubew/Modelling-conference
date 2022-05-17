@@ -103,9 +103,60 @@ button {
   padding: 8px;
   height: 70px;
   width: 70%;
-  margin: 5% 15%;
-  /* font-style: italic; */
+  margin: 20% 15%;
   border: none;
+}
+
+.featured-speaker-section {
+  background-color: white;
+}
+.speakers-title {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.speaker {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+.speaker img {
+  width: 30%;
+  height: 30%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content h2 {
+  font-size: 18px;
+  padding: 12px;
+}
+
+.content h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: red;
+  padding: 12px;
+}
+
+.content p {
+  font-size: 14px;
+  color: #272a31;
+  padding: 12px;
+}
+
+.btn {
+  width: 80%;
+  margin: 10%;
+  color: black;
+  background-color: rgb(230, 206, 206);
+  border: 2px solid #e72006;
+  box-shadow: #272a31;
+  padding: 12px;
 }
 
 
