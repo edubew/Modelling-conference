@@ -9,3 +9,16 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+
+.bars {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 5px 10px;
+  background-color: #272a31;
+}
+
+.hambuger-menu {
+  margin-top: 20px;
+  margin-left: 15px;
+}
