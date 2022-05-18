@@ -5,24 +5,25 @@
 }
 
 body {
-  background-color: #d3d3d3;
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  background-image: url("images/banner-image.jpg");
-  background-size: contain;
-  background-repeat: repeat;
-  height: 40vh;
-  opacity: 0.1;
+.banner {
+  background-image: url("images/banner.jpg");
+  opacity: 0.2;
+  background-size: 100%;
+  background-repeat: no-repeat;
   width: 100vw;
 }
+
+/* hambuger menu styling --starts here-- */
 
 .bars {
   display: block;
   width: 28px;
   height: 4px;
   margin: 5px 10px;
+  opacity: 1;
   background-color: #272a31;
 }
 
@@ -31,11 +32,44 @@ header {
   margin-left: 15px;
 }
 
-.introductory-section {
-  background-image: url("images/content-image.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+.hambuger-menu.active .bars:nth-child(2) {
+  opacity: 0;
 }
+
+.hambuger-menu.active .bars:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hambuger-menu.active .bars:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+/* hambuger menu styling --ends here-- */
+
+/* Navbar links --starts here-- */
+ul li,
+a {
+  margin-top: 24px;
+}
+
+.navbar-links {
+  background-color: #272a31;
+  padding: 5px;
+  margin-top: 20px;
+  top: 0;
+  display: none;
+}
+
+.nav-items li,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 24px;
+}
+
+/* Navbar links --starts here-- */
 
 .introductory-section h1 {
   margin: 25px 10px;
@@ -45,24 +79,27 @@ header {
 }
 
 .introductory-section p {
-    margin-bottom: 24px;
-    margin-left: 10px;
-    background-color: #d3d3d3;
-    text-align: center;
-    font-size: 16px;
-    line-height: 28px;
-    border: 3px solid white; 
+  margin-bottom: 24px;
+  margin-left: 10px;
+  background-color: #d3d3d3;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  border: 3px solid white;
 }
 
 .introductory-section h3 {
   margin-bottom: 24px;
 }
 
+/* Introduction section --ends here-- */
+
+/* Events section --starts here-- */
 .events-section {
   background-color: #272a31;
   background-image: url("images/section.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
 }
 
 .main-program {
@@ -79,20 +116,33 @@ header {
   margin: 30px 24px;
 }
 
-#events {
-    display: grid;
-    grid-template-columns: 1fr 4fr 5fr;
-    background-color: rgba(71, 71, 77, 0.61);
-    margin: 10px;
-    padding: 4px;
-    align-items: center;
+.content h3 {
+  font-size: 16px;
+  font-style: italic;
+  color: red;
+  padding: 12px;
 }
 
-#events h3 {
+.events {
+  display: grid;
+  grid-template-columns: 1fr 4fr 5fr;
+  background-color: rgba(71, 71, 77, 0.61);
+  margin: 10px;
+  padding: 4px;
+  align-items: center;
+}
+
+.events h3 {
   color: rgb(230, 24, 24);
 }
 
-#events p {
+.content p {
+  font-size: 14px;
+  color: #272a31;
+  padding: 12px;
+}
+
+.events p {
   color: rgba(255, 255, 255, 0.836);
 }
 
@@ -107,9 +157,13 @@ button {
   border: none;
 }
 
+/* Events section --ends here-- */
+
+/* Featured section --starts here-- */
 .featured-speaker-section {
   background-color: white;
 }
+
 .speakers-title {
   text-align: center;
   margin-top: 18px;
@@ -127,25 +181,12 @@ button {
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .content h2 {
   font-size: 18px;
-  padding: 12px;
-}
-
-.content h3 {
-  font-size: 16px;
-  font-style: italic;
-  color: red;
-  padding: 12px;
-}
-
-.content p {
-  font-size: 14px;
-  color: #272a31;
   padding: 12px;
 }
 
@@ -155,13 +196,47 @@ button {
   color: black;
   background-color: rgb(230, 206, 206);
   border: 2px solid #e72006;
-  box-shadow: #272a31;
   padding: 12px;
 }
 
+/* Featured section --ends here-- */
 
+.partners {
+  background-color: #272a31;
+}
 
+.partners h2 {
+  text-align: center;
+  margin: 20px;
+  padding: 34px;
+  text-decoration: underline solid orangered;
+  text-decoration-thickness: 2px;
+  color: white;
+}
 
+.brand-list {
+  display: flex;
+  justify-content: space-around;
+}
 
-        
+.brands img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 35px;
+}
 
+.footer-container {
+  background-color: white;
+  margin: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
