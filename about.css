@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d3d3d3;
+  font-family: 'Lato', sans-serif;
+}
+
+.invitation-section {
+  background-image: url("images/banner2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+}
+
+.bars {
+  display: block;
+  width: 28px;
+  height: 4px;
+  margin: 5px 10px;
+  background-color: #272a31;
+}
+
+.hambuger-menu {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.hambuger-menu.active .bars:nth-child(2) {
+  opacity: 0;
+}
+
+.hambuger-menu.active .bars:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hambuger-menu.active .bars:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+ul li,
+a {
+  margin-top: 24px;
+}
+
+.navbar-links {
+  background-color: #272a31;
+  padding: 5px;
+  margin-top: 20px;
+  top: 0;
+  display: none;
+}
+
+.nav-items li,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 24px;
+}
+
+.invite-note h1 {
+  margin: 25px 10px;
+  font-size: 32px;
+  font-weight: 600;
+  color: rgb(253, 71, 5);
+}
+
+.invite-note p {
+  margin-bottom: 24px;
+  margin-left: 10px;
+  background-color: white;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+  border: 1px solid #272a31;
+}
+
+.invite-note .contact-info {
+  border: none;
+  background-color: #d3d3d3;
+  color: black;
+  text-align: center;
+  margin: 24px 12px;
+}
+
+.welcome h2 {
+  color: red;
+  text-align: center;
+  margin: 40px 24px;
+}
+
+.welcome p {
+  color: black;
+  background-color: rgb(243, 243, 243);
+  margin: 0 24px;
+  text-align: center;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.previous-projects {
+  margin: 50px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(119, 5, 5, 0.4);
+}
+
+.previous-projects img {
+  width: 95vw;
+  height: auto;
+  position: relative;
+  opacity: 0.6;
+}
+
+.content {
+  position: absolute;
+  margin-top: 30%;
+  text-align: center;
+  color: white;
+  font-size: 18px;
+  padding: 20px;
+  height: 60px;
+  background: rgba(119, 5, 5, 0.4);
+}
+
+.partners {
+  background-color: #272a31;
+}
+
+.partners h2 {
+  text-align: center;
+  margin: 20px;
+  padding: 34px;
+  text-decoration: underline solid orangered;
+  text-decoration-thickness: 2px;
+  color: white;
+}
+
+.brand-list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.brands img {
+  width: 50px;
+  height: auto;
+  margin-bottom: 35px;
+}
+
+.footer-container {
+  background-color: white;
+  margin: 2px 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  display: block;
+}
