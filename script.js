@@ -68,7 +68,7 @@ const speakers = [
   },
 ];
 
-const allSpeakers = speakers.map((speaker) => `<div class="speaker ${speaker.content} ${speaker.profileName}">
+const allSpeakers = speakers.map((speaker) => `<div class="speaker ${speaker.content}${speaker.profileName}">
     <img src="images/${speaker.featuredImage}" alt="">
     <div class="content">
         <h2>${speaker.Name}</h2>
