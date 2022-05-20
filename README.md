@@ -32,6 +32,13 @@ To get a local copy up and running follow these simple example steps.
 - git
 
 
+### Setup
+
+- git init
+- git clone https://github.com/edubew/Capstone_project1.git
+
+
+
 
 ## Loom video recording
 
@@ -41,12 +48,6 @@ To get a local copy up and running follow these simple example steps.
 
 ## Live Demo
 [View project](https://edubew.github.io/Capstone_project1/)
-
-
-### Setup
-
-- git init
-- git clone https://github.com/edubew/Capstone_project1.git
 
 
 
