@@ -12,7 +12,16 @@
     <title>Document</title>
   </head>
   <body>
-<div class="banner">
+      <div class="social-links hide">
+          <ul>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""></a>English</li>
+              <li><a href=""></a>My page</li>
+              <li><a href=""></a>Logout</li>
+          </ul>
+      </div>
+
     <header>
       <nav>
         <div class="hambuger-menu">
@@ -20,6 +29,7 @@
           <span class="bars"></span>
           <span class="bars"></span>
         </div>
+        <a href="index.html" class="logo hide"><img src="images/OYA-logo.jpg" alt=""></a>
         <ul class="navbar-links hide">
             <li><a href="about.html" class="nav-items">About</a></li>
             <li><a href="index.html" class="nav-items">Program</a></li>
@@ -31,7 +41,7 @@
     </header>
     <section class="introductory-section">
       <div class="introduction">
-        <h1>OWN YOUR ART ICONS' CONFERENCE 2022</h1>
+        <h1>OWN YOUR ART <br/>ICONS' CONFERENCE 2022</h1>
         <p>
           A joyful celebration to honour exellence in fashion and modelling all
           over the world and getting meaningful patterns from data to improve the
@@ -41,22 +51,22 @@
         <h3>2022/09/29(Thurs) - 30th(Fri)</h3>
       </div>
     </section>
-</div>
     <section class="events-section">
         <div class="main-program">
             <h2>Main Program</h2>
+            <div class="events-flex">
             <div class="speech events">
-                <i class="fa-solid fa-podium-star"></i>
+                <i class="fa-solid fa-comments"></i>
                 <h3>Speech</h3>
                 <p>Listen to speaches from top model agencies and other experts around the world about openness, commitment and passion</p>
             </div>
-            <div class="Exhibition events">
-                 <i class="fa-solid fa-projector"></i>
+            <div class="exhibition events" id="desktop">
+                <i class="fa-solid fa-clapperboard"></i>
                  <h3>Runway Exhibition</h3>
                  <p>Appreciate various ideas and designs from different fashion and modelling creatives organized from sarit center</p>
             </div>
-             <div class="forum events">
-                <i class="fa-solid fa-messages"></i>
+             <div class="forum events" id="desktop2">
+                <i class="fa-solid fa-comments"></i>
                  <h3>Forum</h3>
                  <p>Have time to share your thougts and opinions with experts for each topic</p>
              </div>
@@ -66,7 +76,7 @@
                  <p>Try creating your own masterpiece by participating in organized photoshoot and design challenges</p>
              </div>
              <div class="Awards events">
-                <i class="fa-solid fa-trophy-star"></i>
+                <i class="fa-solid fa-award"></i>
                  <h3>Awards</h3>
                  <p>Parcipate in the award ceremony for not only the design geniuses but also for the winners from the workshop activity</p>
              </div>
@@ -75,62 +85,64 @@
                  <h3>Network</h3>
                  <p>Get opportunities to network with renown fashion icons and models and get useful insights from their pieces</p>
              </div>
+            </div>
+            <a href="" class="see-program hide">See the whole program</a>
              <button type="submit">Join OYA Summit</button>
         </div>
     </section>
     <section class="featured-speaker-section">
+        <h2 class="speakers-title">Featured Speakers</h2>
         <div class="speakers">
-            <h2 class="speakers-title">Featured Speakers</h2>
-            <div class="speaker">
+            <!-- <div class="speaker">
                 <img src="images/lorians.JPG" alt="">
                 <div class="content">
                     <h2>Lorians Mercy Ogallo</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
+                    <h3>The CEO at Mochez model International</h3>
+                    <p>Lorians is the founder of Mochez models and in charge of implementing the company's goals, mission and vision </p>
                 </div>
             </div>
             <div class="speaker">
                 <img src="images/nicole.jpg" alt="">
                 <div class="content">
                     <h2>Nicole Terry</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
+                    <h3>Health, nutritionist and lifestyle coach</h3>
+                    <p>As a lifestyle coach, Terry educates individuals on the need to identify their dietary requirements and restrictions </p>
                 </div>
             </div>
             <div class="speaker">
                 <img src="images/pamela.jpg" alt="">
                 <div class="content">
                     <h2>Pamela Grace</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
+                    <h3>Psychologist leader</h3>
+                    <p>Pamela is an experienced psychologist and a has published several books on dealing with anxiety and depression</p>
                 </div>
             </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
+            <div class="speaker hide2">
+                <img src="images/patricia.jpg" alt="">
                 <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
+                    <h2>Vanita Joy</h2>
+                    <h3>Photographer</h3>
+                    <p>Vanita has been leading various photography projects and exhibition. Get a chance to learn from the best</p>
                 </div>
             </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
+            <div class="speaker hide2"> 
+                <img src="images/lorians.JPG" alt="">
                 <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
+                    <h2>M. Quincy</h2>
+                    <h3>Designer</h3>
+                    <p>“Good design is actually a lot harder to notice than poor design, in part because good designs fit our needs so well that the design is invisible,”</p>
                 </div>
             </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
+            <div class="speaker hide2">
+                <img src="images/nicole.jpg" alt="">
                 <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
+                    <h2>Patricia G</h2>
+                    <h3>Fitness Instructor</h3>
+                    <p>“To keep the body in good health is a duty… otherwise we shall not be able to keep our mind strong and clear.” “When it comes to eating right and exercising, there is no 'I'll start tomorrow'.” “It never gets easier, you just get better.”</p>
+                </div>-->
             </div>
             <button type="submit" class="btn">More</button>
-        </div>
+    
     </section>
     <section>
     <div class="partners">

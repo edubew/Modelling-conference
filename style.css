@@ -5,15 +5,17 @@
 }
 
 body {
+  background-color: #d3d3d3;
   font-family: 'Lato', sans-serif;
 }
 
-.banner {
+header {
   background-image: url("images/banner.jpg");
-  opacity: 0.2;
   background-size: 100%;
   background-repeat: no-repeat;
-  width: 100vw;
+  height: 30vh;
+  opacity: 0.6;
+  margin: 0 3%;
 }
 
 /* hambuger menu styling --starts here-- */
@@ -23,7 +25,6 @@ body {
   width: 28px;
   height: 4px;
   margin: 5px 10px;
-  opacity: 1;
   background-color: #272a31;
 }
 
@@ -44,9 +45,6 @@ body {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* hambuger menu styling --ends here-- */
-
-/* Navbar links --starts here-- */
 ul li,
 a {
   margin-top: 24px;
@@ -71,16 +69,21 @@ a {
 
 /* Navbar links --starts here-- */
 
+.introductory-section {
+  background-image: url("images/content-image.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 3%;
+}
+
 .introductory-section h1 {
   margin: 25px 10px;
-  font-size: 32px;
-  font-weight: 600;
-  color: rgb(253, 71, 5);
+  font-size: 10vw;
+  color: rgba(245, 11, 11, 0.56);
 }
 
 .introductory-section p {
-  margin-bottom: 24px;
-  margin-left: 10px;
+  margin: 24px 20px;
   background-color: #d3d3d3;
   text-align: center;
   font-size: 16px;
@@ -88,8 +91,10 @@ a {
   border: 3px solid white;
 }
 
-.introductory-section h3 {
+.introductory-section h2,
+h3 {
   margin-bottom: 24px;
+  margin-left: 12px;
 }
 
 /* Introduction section --ends here-- */
@@ -98,8 +103,9 @@ a {
 .events-section {
   background-color: #272a31;
   background-image: url("images/section.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: 100%;
+  margin: 0 3%;
 }
 
 .main-program {
@@ -109,7 +115,7 @@ a {
 
 .main-program h2 {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
   text-align: center;
   text-decoration: underline solid orangered;
   text-decoration-thickness: 3px;
@@ -117,10 +123,11 @@ a {
 }
 
 .content h3 {
-  font-size: 16px;
+  font-size: 14px;
   font-style: italic;
+  margin-left: 0;
+  margin-top: 2px;
   color: red;
-  padding: 12px;
 }
 
 .events {
@@ -133,17 +140,21 @@ a {
 }
 
 .events h3 {
-  color: rgb(230, 24, 24);
+  color: rgb(245, 11, 11);
 }
 
 .content p {
   font-size: 14px;
   color: #272a31;
-  padding: 12px;
 }
 
 .events p {
   color: rgba(255, 255, 255, 0.836);
+}
+
+i {
+  font-size: 30px;
+  color: #fff;
 }
 
 button {
@@ -162,11 +173,14 @@ button {
 /* Featured section --starts here-- */
 .featured-speaker-section {
   background-color: white;
+  margin: 0 3%;
 }
 
 .speakers-title {
   text-align: center;
-  margin-top: 18px;
+  margin-top: 20px;
+  text-decoration: underline solid orangered;
+  text-decoration-thickness: 3px;
 }
 
 .speaker {
@@ -187,7 +201,6 @@ button {
 
 .content h2 {
   font-size: 18px;
-  padding: 12px;
 }
 
 .btn {
@@ -203,6 +216,7 @@ button {
 
 .partners {
   background-color: #272a31;
+  margin: 0 3%;
 }
 
 .partners h2 {
@@ -226,8 +240,8 @@ button {
 }
 
 .footer-container {
-  background-color: white;
-  margin: 2px 0;
+  background-color: rgb(221, 213, 213);
+  margin: 0 3%;
   display: flex;
   justify-content: space-between;
   padding: 20px;
@@ -239,4 +253,175 @@ button {
 
 .active {
   display: block;
+}
+
+/* desktop version */
+
+@media only screen and (min-width: 768px) {
+  .hide {
+    display: block;
+  }
+
+  .mobile {
+    display: none;
+  }
+
+  #desktop {
+    display: none;
+  }
+
+  #desktop2 {
+    display: none;
+  }
+
+  .social-links {
+    background-color: #272a31;
+    margin: 0 3%;
+  }
+
+  .social-links ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-links ul,
+  li a {
+    padding: 2px;
+    margin-right: 20px;
+    color: white;
+    list-style: none;
+  }
+
+  .hambuger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0 12px;
+    background-color: white;
+  }
+
+  .navbar-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .introductory-section h1 {
+    font-size: 50px;
+    margin-left: 40px;
+  }
+
+  .introductory-section p {
+    font-size: 16px;
+    text-align: center;
+    width: 65vw;
+    margin: 35px 0 35px 40px;
+  }
+
+  .introductory-section h2,
+  h3 {
+    margin-left: 40px;
+  }
+
+  .main-program {
+    display: flex;
+  }
+
+  .main-program h2 {
+    font-size: 30px;
+    margin: 35px 0;
+    text-decoration-thickness: 4px;
+  }
+
+  .events-section {
+    background: #000;
+    height: 100vh;
+  }
+
+  .events-flex {
+    display: flex;
+    margin: 4% 3%;
+  }
+
+  .events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(94 94 101 / 61%);
+    margin: 1.2px;
+    height: 50vh;
+  }
+
+  .events:hover {
+    border: 2px solid #d3d3d3;
+  }
+
+  .events h3 {
+    color: rgb(230, 24, 24);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 4px;
+    margin-bottom: 0;
+  }
+
+  .content p {
+    font-size: 18px;
+    color: #272a31;
+    margin-top: -10px;
+  }
+
+  .events p {
+    color: rgba(255, 255, 255, 0.836);
+    text-align: center;
+    font-size: 18px;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+  }
+
+  .see-program {
+    text-align: center;
+    margin-bottom: 40%;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+  }
+
+  button {
+    display: none;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    margin: 0 20px;
+  }
+
+  .speaker {
+    margin: 5px 5px;
+  }
+
+  .speaker img {
+    width: 40%;
+    height: 40%;
+  }
+
+  .btn {
+    display: none;
+  }
 }

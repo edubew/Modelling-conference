@@ -7,12 +7,14 @@
 body {
   background-color: #d3d3d3;
   font-family: 'Lato', sans-serif;
+  margin: 0 3%;
 }
 
 .invitation-section {
   background-image: url("images/banner2.png");
   background-size: cover;
   background-repeat: no-repeat;
+  top: 0;
   opacity: 0.4;
 }
 
@@ -66,15 +68,16 @@ a {
 .invite-note h1 {
   margin: 25px 10px;
   font-size: 32px;
+  text-align: center;
   font-weight: 600;
   color: rgb(253, 71, 5);
 }
 
 .invite-note p {
-  margin-bottom: 24px;
-  margin-left: 10px;
+  margin: 24px 12px;
   background-color: white;
   text-align: center;
+  color: #000;
   font-size: 16px;
   line-height: 28px;
   border: 1px solid #272a31;
@@ -83,9 +86,17 @@ a {
 .invite-note .contact-info {
   border: none;
   background-color: #d3d3d3;
-  color: black;
+  color: #000;
   text-align: center;
   margin: 24px 12px;
+}
+
+.invite-note .contact-info a {
+  color: orangered;
+}
+
+.welcome {
+  background-color: #ccc8c8;
 }
 
 .welcome h2 {
@@ -95,7 +106,7 @@ a {
 }
 
 .welcome p {
-  color: black;
+  color: #000;
   background-color: rgb(243, 243, 243);
   margin: 0 24px;
   text-align: center;
@@ -103,7 +114,16 @@ a {
   line-height: 28px;
 }
 
-.previous-projects {
+.past-conference {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: #000;
+  margin: 30px 10px;
+  padding: 20px;
+}
+
+.projects {
   margin: 50px 20px;
   display: flex;
   flex-direction: column;
@@ -111,8 +131,8 @@ a {
   background: rgba(119, 5, 5, 0.4);
 }
 
-.previous-projects img {
-  width: 95vw;
+.projects img {
+  width: 60vw;
   height: auto;
   position: relative;
   opacity: 0.6;
@@ -120,12 +140,13 @@ a {
 
 .content {
   position: absolute;
-  margin-top: 30%;
+  margin: 10% 0 0 30%;
   text-align: center;
   color: white;
   font-size: 18px;
   padding: 20px;
-  height: 60px;
+  width: 50vw;
+  height: auto;
   background: rgba(119, 5, 5, 0.4);
 }
 
@@ -167,4 +188,114 @@ a {
 
 .active {
   display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .hide {
+    display: block;
+  }
+
+  .social-links {
+    background-color: #272a31;
+  }
+
+  .social-links ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .social-links ul,
+  li a {
+    padding: 2px;
+    margin-right: 20px;
+    color: white;
+    list-style: none;
+  }
+
+  .hambuger-menu {
+    display: none;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .logo img {
+    width: 80px;
+  }
+
+  .navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0 12px;
+    background-color: white;
+  }
+
+  .navbar-links li a {
+    color: black;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+  }
+
+  .invite-note h1 {
+    padding: 55px;
+    font-size: 32px;
+  }
+
+  .footer-container h3,
+  p {
+    color: #fff;
+  }
+
+  .invite-note p {
+    margin: 0 12%;
+  }
+
+  .invite-note .contact-info {
+    margin: 5% 15% 0 15%;
+  }
+
+  .welcome h2 {
+    color: red;
+    text-align: center;
+    margin: 40px 24px;
+  }
+
+  .welcome p {
+    color: black;
+    background-color: rgb(243, 243, 243);
+  }
+
+  .previous-projects {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .projects img {
+    width: 30vw;
+    height: auto;
+    position: relative;
+  }
+
+  .content {
+    position: absolute;
+    margin: -5% 0 0 0;
+    text-align: center;
+    color: white;
+    width: 30vw;
+    height: auto;
+  }
+
+  .partners {
+    display: none;
+  }
+
+  .footer-container {
+    background-color: #272a31;
+  }
 }
