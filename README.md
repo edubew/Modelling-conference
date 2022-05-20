@@ -38,6 +38,11 @@ To get a local copy up and running follow these simple example steps.
 [Project Description](https://www.loom.com/share/a41eea4532d84520863f17482c7399b1)
 
 
+
+## Live Demo
+[View project](https://edubew.github.io/Capstone_project1/)
+
+
 ### Setup
 
 - git init
