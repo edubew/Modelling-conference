@@ -12,7 +12,16 @@
     <title>Document</title>
   </head>
   <body>
-<div class="banner">
+      <div class="social-links hide">
+          <ul>
+              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+              <li><a href=""></a>English</li>
+              <li><a href=""></a>My page</li>
+              <li><a href=""></a>Logout</li>
+          </ul>
+      </div>
+
     <header>
       <nav>
         <div class="hambuger-menu">
@@ -20,18 +29,20 @@
           <span class="bars"></span>
           <span class="bars"></span>
         </div>
+        <a href="index.html" class="logo hide"><img src="images/OYA-logo.jpg" alt=""></a>
         <ul class="navbar-links hide">
             <li><a href="about.html" class="nav-items">About</a></li>
             <li><a href="index.html" class="nav-items">Program</a></li>
             <li><a href="index.html" class="nav-items">Join</a></li>
             <li><a href="index.html" class="nav-items">Sponsor</a></li>
-            <li><a href="index.html" class="nav-items">Campaign</a></li>
+            <li><a href="index.html" class="nav-items" id="campaign">Campaign</a></li>
         </ul>
       </nav>
     </header>
     <section class="introductory-section">
       <div class="introduction">
-        <h1>OWN YOUR ART ICONS' CONFERENCE 2022</h1>
+        <p class="hello">"Hello! sharing world!"</p>
+        <h1>OWN YOUR ART <br/>ICONS' CONFERENCE 2022</h1>
         <p>
           A joyful celebration to honour exellence in fashion and modelling all
           over the world and getting meaningful patterns from data to improve the
@@ -41,22 +52,22 @@
         <h3>2022/09/29(Thurs) - 30th(Fri)</h3>
       </div>
     </section>
-</div>
     <section class="events-section">
         <div class="main-program">
             <h2>Main Program</h2>
+            <div class="events-flex">
             <div class="speech events">
-                <i class="fa-solid fa-podium-star"></i>
+                <i class="fa-solid fa-comments"></i>
                 <h3>Speech</h3>
                 <p>Listen to speaches from top model agencies and other experts around the world about openness, commitment and passion</p>
             </div>
-            <div class="Exhibition events">
-                 <i class="fa-solid fa-projector"></i>
+            <div class="exhibition events">
+                <i class="fa-solid fa-clapperboard"></i>
                  <h3>Runway Exhibition</h3>
                  <p>Appreciate various ideas and designs from different fashion and modelling creatives organized from sarit center</p>
             </div>
-             <div class="forum events">
-                <i class="fa-solid fa-messages"></i>
+             <div class="forum events" id="desktop2">
+                <i class="fa-solid fa-comments"></i>
                  <h3>Forum</h3>
                  <p>Have time to share your thougts and opinions with experts for each topic</p>
              </div>
@@ -66,7 +77,7 @@
                  <p>Try creating your own masterpiece by participating in organized photoshoot and design challenges</p>
              </div>
              <div class="Awards events">
-                <i class="fa-solid fa-trophy-star"></i>
+                <i class="fa-solid fa-award"></i>
                  <h3>Awards</h3>
                  <p>Parcipate in the award ceremony for not only the design geniuses but also for the winners from the workshop activity</p>
              </div>
@@ -75,81 +86,37 @@
                  <h3>Network</h3>
                  <p>Get opportunities to network with renown fashion icons and models and get useful insights from their pieces</p>
              </div>
+            </div>
+            <a href="" class="see-program hide">See the whole program</a>
              <button type="submit">Join OYA Summit</button>
         </div>
     </section>
     <section class="featured-speaker-section">
+        <h2 class="speakers-title">Featured Speakers</h2>
         <div class="speakers">
-            <h2 class="speakers-title">Featured Speakers</h2>
-            <div class="speaker">
-                <img src="images/lorians.JPG" alt="">
-                <div class="content">
-                    <h2>Lorians Mercy Ogallo</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="images/nicole.jpg" alt="">
-                <div class="content">
-                    <h2>Nicole Terry</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="images/pamela.jpg" alt="">
-                <div class="content">
-                    <h2>Pamela Grace</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
-                <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
-                <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
-            </div>
-            <div class="speaker">
-                <img src="images/speaker.jpg" alt="">
-                <div class="content">
-                    <h2>Nicole</h2>
-                    <h3>I don't really know what to put here</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit nemo fugit sint aliquid! </p>
-                </div>
+        
             </div>
             <button type="submit" class="btn">More</button>
-        </div>
+    
     </section>
     <section>
     <div class="partners">
         <h2>Partners</h2>
        <div class="brand-list">
         <div class="brands">
-            <img src="images/img.jpg" alt="">
+            <img src="images/img.jpg" alt="IMG logo">
         </div>
         <div class="brands">
-            <img src="images/canon.jpg" alt="">
+            <img src="images/canon.jpg" alt="canon logo">
         </div>
         <div class="brands">
-            <img src="images/instagram.jpg" alt="">
+            <img src="images/instagram.jpg" alt="instagram logo">
         </div>
         <div class="brands">
-            <img src="images/vuitton.jpg" alt="">
+            <img src="images/vuitton.jpg" alt="louis vuitton logo">
         </div>
         <div class="brands">
-            <img src="images/airbnb.jpg" alt="">
+            <img src="images/airbnb.jpg" alt="airbnb logo">
         </div>
        </div>
     </div>
