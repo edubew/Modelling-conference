@@ -70,7 +70,7 @@ const speakers = [
 
 const allSpeakers = speakers.map((speaker) => `<div class="speaker ${speaker.content} ${speaker.profileName}">
   <div id="profile-bg">
-    <img src="images/${speaker.featuredImage}" alt="">
+    <img src="images/${speaker.featuredImage}" alt="speaker's image">
   </div>
     <div class="content">
         <h2>${speaker.Name}</h2>
