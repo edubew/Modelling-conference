@@ -241,8 +241,11 @@ a {
   }
 
   .invite-note h1 {
-    padding: 55px;
-    font-size: 32px;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    color: #c51700;
+    margin: 0 8%;
+    font-weight: 800;
   }
 
   .footer-container h3,

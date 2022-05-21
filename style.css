@@ -11,7 +11,7 @@ body {
 
 header {
   background-image: url("images/banner.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 30vh;
   opacity: 0.6;
@@ -25,12 +25,11 @@ header {
   width: 28px;
   height: 4px;
   margin: 5px 10px;
-  background-color: #272a31;
+  background-color: #fff;
 }
 
 .hambuger-menu {
-  margin-top: 20px;
-  margin-left: 15px;
+  margin: 3% 5%;
 }
 
 .hambuger-menu.active .bars:nth-child(2) {
@@ -76,10 +75,20 @@ a {
   margin: 0 3%;
 }
 
+.introduction .hello {
+  font-size: 8vw;
+  font-weight: 400;
+  color: #c51700;
+  background: none;
+  float: left;
+  border: none;
+}
+
 .introductory-section h1 {
   margin: 25px 10px;
   font-size: 10vw;
-  color: rgba(245, 11, 11, 0.56);
+  color: #c51700;
+  font-weight: 600;
 }
 
 .introductory-section p {
@@ -122,11 +131,14 @@ h3 {
   margin: 30px 24px;
 }
 
+.content h2,
+h3 {
+  padding: 6px;
+}
+
 .content h3 {
   font-size: 14px;
   font-style: italic;
-  margin-left: 0;
-  margin-top: 2px;
   color: red;
 }
 
@@ -145,6 +157,7 @@ h3 {
 
 .content p {
   font-size: 14px;
+  margin: 0;
   color: #272a31;
 }
 
@@ -178,25 +191,32 @@ button {
 
 .speakers-title {
   text-align: center;
-  margin-top: 20px;
+  padding: 5px;
   text-decoration: underline solid orangered;
   text-decoration-thickness: 3px;
 }
 
 .speaker {
   display: flex;
-  gap: 10px;
-  margin: 30px 0;
+  justify-content: space-between;
+  gap: 80px;
+  margin: 3% 0;
 }
 
 .speaker img {
-  width: 30%;
-  height: 30%;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  width: 18vw;
+  height: 16vh;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
+#profile-bg {
+  position: relative;
+  background: url("images/profile-image.jpg");
+  background-size: contain;
+  width: 10vw;
+  height: 8vh;
 }
 
 .content h2 {
@@ -320,21 +340,50 @@ button {
     font-weight: 600;
   }
 
+  #campaign {
+    margin-right: 0;
+    border: 5px solid #c51700;
+  }
+
+  .content h2,
+  h3,
+  p {
+    padding: 8px;
+  }
+
   .introductory-section h1 {
-    font-size: 50px;
-    margin-left: 40px;
+    font-size: 6vw;
+    letter-spacing: 2px;
+    color: #c51700;
+    margin: 0 8%;
+    font-weight: 800;
+  }
+
+  .introduction .hello {
+    font-size: 4vw;
+    font-weight: 400;
+    color: #c51700;
+    background: none;
+    border: none;
+    text-align: start;
+    margin: 0 6%;
+    width: 80%;
+    float: left;
   }
 
   .introductory-section p {
-    font-size: 16px;
+    font-size: 18px;
+    line-height: 28px;
     text-align: center;
-    width: 65vw;
-    margin: 35px 0 35px 40px;
+    padding: 20px;
+    width: 40vw;
+    margin: 2% 8%;
   }
 
   .introductory-section h2,
   h3 {
-    margin-left: 40px;
+    margin: 2% 8%;
+    font-weight: 600;
   }
 
   .main-program {
@@ -349,7 +398,7 @@ button {
 
   .events-section {
     background: #000;
-    height: 100vh;
+    height: 80vh;
   }
 
   .events-flex {
@@ -361,9 +410,9 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(94 94 101 / 61%);
+    background-color: rgba(84, 84, 86, 0.61);
     margin: 1.2px;
-    height: 50vh;
+    height: auto;
   }
 
   .events:hover {
@@ -374,29 +423,37 @@ button {
     color: rgb(230, 24, 24);
     font-size: 20px;
     text-align: center;
-    margin-top: 4px;
-    margin-bottom: 0;
+    margin: 4% 0;
   }
 
   .content p {
     font-size: 18px;
     color: #272a31;
-    margin-top: -10px;
   }
 
   .events p {
     color: rgba(255, 255, 255, 0.836);
     text-align: center;
     font-size: 18px;
-    width: 100%;
-    height: 100%;
-    margin-bottom: 0;
+    width: 80%;
+    height: auto;
+    padding: 4px;
+    margin: 3% 4%;
+  }
+
+  i {
+    font-size: 40px;
+    color: #fff;
+    margin: 3% 0;
+    padding: 5px;
   }
 
   .see-program {
     text-align: center;
-    margin-bottom: 40%;
+    margin: 3% 0;
     color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
     text-decoration: underline;
     text-decoration-thickness: 4px;
   }
@@ -405,20 +462,39 @@ button {
     display: none;
   }
 
-  .speakers {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    margin: 0 20px;
+  .speakers-title {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+    text-decoration: underline solid orangered;
+    text-decoration-thickness: 3px;
   }
 
   .speaker {
-    margin: 5px 5px;
+    display: flex;
+    justify-content: space-between;
+    gap: 120px;
+  }
+
+  .speakers {
+    display: grid;
+    grid-template-columns: auto auto;
   }
 
   .speaker img {
-    width: 40%;
-    height: 40%;
+    position: relative;
+    top: 30px;
+    left: 30px;
+    width: 12vw;
+    height: 14vh;
+  }
+
+  #profile-bg {
+    position: relative;
+    background: url("images/profile-image.jpg");
+    background-size: contain;
+    width: 6vw;
+    height: 8vh;
   }
 
   .btn {
