@@ -9,27 +9,19 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-header {
-  background-image: url("images/banner.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 30vh;
-  opacity: 0.6;
-  margin: 0 3%;
-}
-
-/* hambuger menu styling --starts here-- */
-
-.bars {
+ .bars {
+  position: static;
   display: block;
   width: 28px;
   height: 4px;
   margin: 5px 10px;
-  background-color: #fff;
+  background-color: #000;
 }
 
 .hambuger-menu {
-  margin: 3% 5%;
+  position: static;
+ margin: 3% 5%;
+ z-index: 3;
 }
 
 .hambuger-menu.active .bars:nth-child(2) {
@@ -46,14 +38,16 @@ header {
 
 ul li,
 a {
-  margin-top: 24px;
+  margin-top: 38px;
+  list-style: none;
 }
 
 .navbar-links {
-  background-color: #272a31;
-  padding: 5px;
-  margin-top: 20px;
-  top: 0;
+  position: absolute;
+  background-color: #000;
+  width: 100vw;
+  opacity: 0.9;
+  height: 80vh;
   display: none;
 }
 
@@ -64,11 +58,9 @@ a {
   font-size: 18px;
   font-weight: 600;
   margin: 0 24px;
-}
+} 
 
-/* Navbar links --starts here-- */
-
-.introductory-section {
+ .introductory-section {
   background-image: url("images/content-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -85,10 +77,14 @@ a {
 }
 
 .introductory-section h1 {
-  margin: 25px 10px;
-  font-size: 10vw;
-  color: #c51700;
-  font-weight: 600;
+  font-size: 8vw;
+    letter-spacing: 3px;
+    background: url("images/profile-image.jpg") 50% 50%;
+    background-size: cover;
+    margin: 0 8%;
+    font-weight: bolder;
+    color: rgba(245, 11, 11, 0.5);
+    -webkit-background-clip: text;
 }
 
 .introductory-section p {
@@ -104,16 +100,12 @@ a {
 h3 {
   margin-bottom: 24px;
   margin-left: 12px;
-}
+} 
 
-/* Introduction section --ends here-- */
-
-/* Events section --starts here-- */
-.events-section {
-  background-color: #272a31;
+ .events-section {
   background-image: url("images/section.jpg");
-  background-repeat: repeat;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   margin: 0 3%;
 }
 
@@ -179,12 +171,9 @@ button {
   width: 70%;
   margin: 20% 15%;
   border: none;
-}
+} 
 
-/* Events section --ends here-- */
-
-/* Featured section --starts here-- */
-.featured-speaker-section {
+ .featured-speaker-section {
   background-color: white;
   margin: 0 3%;
 }
@@ -230,18 +219,16 @@ button {
   background-color: rgb(230, 206, 206);
   border: 2px solid #e72006;
   padding: 12px;
-}
-
-/* Featured section --ends here-- */
+} 
 
 .partners {
   background-color: #272a31;
-  margin: 0 3%;
+  margin: 4% 3%;
 }
 
 .partners h2 {
   text-align: center;
-  margin: 20px;
+  margin: 24px;
   padding: 34px;
   text-decoration: underline solid orangered;
   text-decoration-thickness: 2px;
@@ -256,7 +243,7 @@ button {
 .brands img {
   width: 50px;
   height: auto;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .footer-container {
@@ -273,7 +260,7 @@ button {
 
 .active {
   display: block;
-}
+} 
 
 /* desktop version */
 
@@ -320,6 +307,7 @@ button {
     display: flex;
     justify-content: space-between;
     background-color: white;
+    margin: 0 3%;
   }
 
   .logo img {
@@ -327,8 +315,10 @@ button {
   }
 
   .navbar-links {
+    position: relative;
     display: flex;
-    list-style: none;
+    width: auto;
+    height: auto;
     margin: 0 12px;
     background-color: white;
   }
@@ -345,19 +335,11 @@ button {
     border: 5px solid #c51700;
   }
 
-  .content h2,
-  h3,
-  p {
-    padding: 8px;
-  }
-
   .introductory-section h1 {
-    font-size: 8vw;
+    font-size: 6vw;
     letter-spacing: 3px;
-    background: url("images/banner.jpg") 50% 50%;
+    background: url("images/profile-image.jpg") 50% 50%;
     background-size: cover;
-
-    /* color: #c51700; */
     margin: 0 8%;
     font-weight: bolder;
     color: rgba(245, 11, 11, 0.5);
@@ -393,6 +375,7 @@ button {
 
   .main-program {
     display: flex;
+    flex-direction: column;
   }
 
   .main-program h2 {
@@ -402,8 +385,8 @@ button {
   }
 
   .events-section {
-    background: #000;
-    height: 80vh;
+    display: flex;
+    background: #000000;
   }
 
   .events-flex {
@@ -429,12 +412,6 @@ button {
     font-size: 20px;
     text-align: center;
     margin: 4% 0;
-  }
-
-  .content p {
-    font-size: 18px;
-    color: #272a31;
-    line-height: 24px;
   }
 
   .events p {
@@ -470,41 +447,45 @@ button {
 
   .speakers-title {
     text-align: center;
-    font-size: 20px;
-    padding: 20px;
+    font-size: 25px;
+    margin: 5%;
     text-decoration: underline solid orangered;
     text-decoration-thickness: 3px;
   }
-
+ 
   .speaker {
     display: flex;
-    justify-content: space-between;
-    gap: 120px;
-  }
+    justify-content: center;
+    align-items: center;
+    margin: 6% 3%;
+  } 
 
   .speakers {
     display: grid;
-    grid-template-columns: auto auto;
-    padding: 10%;
+     grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    align-items: center;
   }
 
   .speaker img {
     position: relative;
     top: 30px;
     left: 30px;
-    width: 12vw;
-    height: 14vh;
+    width: 10vw;
+    height: auto;
   }
 
   #profile-bg {
     position: relative;
     background: url("images/profile-image.jpg");
-    background-size: contain;
-    width: 6vw;
-    height: 8vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 8vw;
+    height: 18vh;
   }
 
   .btn {
     display: none;
   }
 }
+
