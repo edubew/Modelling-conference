@@ -35,19 +35,14 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - git init
-- git clone https://github.com/edubew/Capstone_project1.git
+- git clone 
 
 
-
-
-## Loom video recording
-
-[Project Description](https://www.loom.com/share/a41eea4532d84520863f17482c7399b1)
 
 
 
 ## Live Demo
-[View project](https://edubew.github.io/Capstone_project1/)
+[View project]()
 
 
 
