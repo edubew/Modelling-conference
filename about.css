@@ -49,11 +49,11 @@ a {
 
 .navbar-links {
   position: absolute;
-    background-color: #000;
-    width: 100vw;
-    opacity: 0.9;
-    height: 80vh;
-    display: none;
+  background-color: #000;
+  width: 100vw;
+  opacity: 0.9;
+  height: 80vh;
+  display: none;
 }
 
 .nav-items li,
@@ -76,9 +76,11 @@ a {
 .invite-note p {
   margin: 24px 12px;
   background:
-      linear-gradient(to right bottom,
-        rgba(255, 255, 255, 0.773),
-        rgba(255, 255, 255, 0.508));
+    linear-gradient(
+      to right bottom,
+      rgba(255, 255, 255, 0.773),
+      rgba(255, 255, 255, 0.508)
+    );
   text-align: center;
   color: #000;
   font-size: 16px;
@@ -231,11 +233,11 @@ a {
 
   .navbar-links {
     position: relative;
-      display: flex;
-      width: auto;
-      height: auto;
-      margin: 0 12px;
-      background-color: white;
+    display: flex;
+    width: auto;
+    height: auto;
+    margin: 0 12px;
+    background-color: white;
   }
 
   .navbar-links li a {
