@@ -35,15 +35,12 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 - git init
-- git clone 
-
-
+- git clone https://github.com/edubew/Modelling-conference.git
 
 
 
 ## Live Demo
-[View project]()
-
+[View project](https://edubew.github.io/Modelling-conference/)
 
 
 
